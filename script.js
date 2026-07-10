@@ -17,11 +17,34 @@ if (prev && next && track) {
   });
 }
 
-// Si agregas un src al iframe, se mostrará automáticamente.
-const videoFrame = document.getElementById('video-frame');
-const videoPlaceholder = document.getElementById('video-placeholder');
+const videoPlayer = document.getElementById('video-player');
+const videoPoster = document.getElementById('video-poster');
+const videoLaunch = document.querySelector('[data-video-launch]');
 
-if (videoFrame && videoPlaceholder && videoFrame.getAttribute('src')?.trim()) {
-  videoFrame.style.display = 'block';
-  videoPlaceholder.style.display = 'none';
+if (videoPlayer && videoPoster && videoLaunch) {
+  const source = videoPlayer.querySelector('source[data-src]');
+
+  const startVideo = async () => {
+    if (source && !source.src) {
+      source.src = source.dataset.src;
+      videoPlayer.load();
+    }
+
+    videoPoster.hidden = true;
+    videoPlayer.hidden = false;
+
+    try {
+      await videoPlayer.play();
+    } catch (error) {
+      // El usuario puede iniciar la reproducción manualmente si el navegador lo bloquea.
+    }
+  };
+
+  videoLaunch.addEventListener('click', startVideo);
+  videoPlayer.addEventListener('ended', () => {
+    videoPlayer.pause();
+    videoPlayer.currentTime = 0;
+    videoPlayer.hidden = true;
+    videoPoster.hidden = false;
+  });
 }

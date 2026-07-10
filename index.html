@@ -45,8 +45,15 @@
         </p>
 
         <div class="video-wrapper">
-          <video class="video-player" controls preload="metadata">
-            <source src="Comandix-Demo.mp4" type="video/mp4" />
+          <div class="video-poster" id="video-poster">
+            <button class="video-launch" type="button" data-video-launch>
+              <span class="video-launch-icon" aria-hidden="true">▶</span>
+              <span class="video-launch-text">Ver demo</span>
+              <span class="video-launch-note">Se carga al reproducir</span>
+            </button>
+          </div>
+          <video class="video-player" id="video-player" controls preload="none" playsinline hidden>
+            <source data-src="Comandix-Demo-lite.mp4" type="video/mp4" />
             Tu navegador no soporta la reproducción de video HTML5.
           </video>
         </div>
