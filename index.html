@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Comandix: digitaliza tus comandas en cualquier dispositivo, en línea y fácil de usar."
+    />
+    <title>Comandix | Comandas Digitales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="inicio">
+      <nav class="nav container">
+        <div class="brand">Comandix</div>
+        <a class="nav-cta" href="#contacto">Solicitar demo</a>
+      </nav>
+
+      <div class="hero-content container">
+        <p class="tag">Comandas digitales para restaurantes y negocios de comida</p>
+        <h1>
+          ¿Cansado de apuntar a mano?
+          <span>Tenemos la solución digital</span>
+        </h1>
+        <p class="subtitle">
+          Usa Comandix en cualquier dispositivo y en línea siempre. Rápido,
+          intuitivo y fácil de usar para todo tu equipo.
+        </p>
+        <a class="primary-btn" href="#contacto">Quiero empezar</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="section container" id="demo-video">
+        <h2>Video demo</h2>
+        <p class="section-text">
+          Aquí puedes mostrar cómo funciona Comandix en pocos minutos.
+        </p>
+
+        <div class="video-wrapper">
+          <div class="video-placeholder" id="video-placeholder">
+            <p>
+              Agrega aquí tu video demo de YouTube/Vimeo reemplazando el `src`
+              del iframe en <strong>index.html</strong>.
+            </p>
+          </div>
+          <iframe
+            id="video-frame"
+            title="Video demo Comandix"
+            src=""
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section class="section clients" id="clientes">
+        <div class="container">
+          <h2>Clientes actuales</h2>
+          <p class="section-text">
+            Negocios que ya están modernizando sus comandas con Comandix.
+          </p>
+
+          <div class="carousel" aria-label="Carrusel de clientes">
+            <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+            <div class="carousel-track" id="carousel-track">
+              <article class="client-card">Tacos El Buen Sabor</article>
+              <article class="client-card">Café Central</article>
+              <article class="client-card">Mariscos La Costa</article>
+              <article class="client-card">Pizzería Roma</article>
+              <article class="client-card">Burgers Norte</article>
+            </div>
+            <button class="carousel-btn next" aria-label="Siguiente">›</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact container" id="contacto">
+        <h2>Contáctanos por WhatsApp</h2>
+        <p class="section-text">
+          Presiona el ícono y envíanos mensaje para agendar tu demo.
+        </p>
+
+        <a
+          class="whatsapp-btn"
+          href="https://wa.me/528443007149?text=Hola%2C%20me%20interesa%20hacer%20mis%20comandas%20digitalmente"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Enviar mensaje por WhatsApp"
+        >
+          <span class="wa-icon" aria-hidden="true">🟢</span>
+          <span>Enviar WhatsApp</span>
+        </a>
+
+        <p class="requirements">
+          <strong>¿Qué ocupas para registrarte?</strong>
+          Mándame nombre de tu negocio y el menú que ofreces, y coordinamos un
+          demo en la brevedad.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© <span id="year"></span> Comandix. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
