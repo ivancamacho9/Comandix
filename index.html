@@ -39,26 +39,16 @@
 
     <main>
       <section class="section container" id="demo-video">
-        <h2>Video demo</h2>
+        <h2>Demo</h2>
         <p class="section-text">
-          Aquí puedes mostrar cómo funciona Comandix en pocos minutos.
+          Video ilustrativo de cómo funciona Comandix.
         </p>
 
         <div class="video-wrapper">
-          <div class="video-placeholder" id="video-placeholder">
-            <p>
-              Agrega aquí tu video demo de YouTube/Vimeo reemplazando el `src`
-              del iframe en <strong>index.html</strong>.
-            </p>
-          </div>
-          <iframe
-            id="video-frame"
-            title="Video demo Comandix"
-            src=""
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
+          <video class="video-player" controls preload="metadata">
+            <source src="Comandix-Demo.mp4" type="video/mp4" />
+            Tu navegador no soporta la reproducción de video HTML5.
+          </video>
         </div>
       </section>
 
@@ -72,11 +62,11 @@
           <div class="carousel" aria-label="Carrusel de clientes">
             <button class="carousel-btn prev" aria-label="Anterior">‹</button>
             <div class="carousel-track" id="carousel-track">
-              <article class="client-card">Tacos El Buen Sabor</article>
-              <article class="client-card">Café Central</article>
-              <article class="client-card">Mariscos La Costa</article>
-              <article class="client-card">Pizzería Roma</article>
-              <article class="client-card">Burgers Norte</article>
+              <article class="client-card">Antojitos doña kika</article>
+              <article class="client-card">Gorditas la calzada</article>
+              <article class="client-card">Tacos de la esquina</article>
+              <article class="client-card">Gorditas la guera</article>
+              <article class="client-card">Hamburguesas el patron</article>
             </div>
             <button class="carousel-btn next" aria-label="Siguiente">›</button>
           </div>

@@ -139,11 +139,17 @@ h1 span {
   color: var(--muted);
 }
 
-iframe {
+iframe,
+.video-player {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: 0;
   display: none;
+}
+
+.video-player {
+  display: block;
+  background: #000;
 }
 
 .clients {
