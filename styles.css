@@ -96,6 +96,23 @@ h1 span {
   margin-bottom: 1.8rem;
 }
 
+.price-highlight {
+  display: inline-block;
+  margin: 0 0 1.2rem;
+  padding: 0.55rem 0.9rem;
+  border-radius: 0.7rem;
+  background: rgba(37, 211, 102, 0.14);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #d9ffe8;
+  font-size: 1rem;
+  letter-spacing: 0.2px;
+}
+
+.price-highlight strong {
+  color: #fff;
+  font-weight: 800;
+}
+
 .primary-btn {
   display: inline-block;
   text-decoration: none;
