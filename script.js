@@ -25,8 +25,6 @@ if (videoPlayer && videoOverlay) {
   const showOverlay = () => videoOverlay.classList.remove('is-hidden');
 
   videoOverlay.addEventListener('click', async () => {
-    hideOverlay();
-
     try {
       await videoPlayer.play();
     } catch (error) {

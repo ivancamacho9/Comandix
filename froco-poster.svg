@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" role="img" aria-labelledby="title desc">
+  <title id="title">Hamburguesas Froco</title>
+  <desc id="desc">Portada del video de Froco con fondo oscuro, brillo verde y botones de pedido.</desc>
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="34%" r="75%">
+      <stop offset="0%" stop-color="#183b13"/>
+      <stop offset="45%" stop-color="#0b0f12"/>
+      <stop offset="100%" stop-color="#050607"/>
+    </radialGradient>
+    <radialGradient id="leftGlow" cx="0%" cy="28%" r="70%">
+      <stop offset="0%" stop-color="rgba(99, 255, 94, 0.28)"/>
+      <stop offset="100%" stop-color="rgba(99, 255, 94, 0)"/>
+    </radialGradient>
+    <radialGradient id="rightGlow" cx="100%" cy="30%" r="72%">
+      <stop offset="0%" stop-color="rgba(255, 210, 64, 0.18)"/>
+      <stop offset="100%" stop-color="rgba(255, 210, 64, 0)"/>
+    </radialGradient>
+    <linearGradient id="panelBorder" x1="0%" x2="100%" y1="0%" y2="100%">
+      <stop offset="0%" stop-color="#6a5d12"/>
+      <stop offset="100%" stop-color="#202020"/>
+    </linearGradient>
+    <linearGradient id="buttonYellow" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#ffe55d"/>
+      <stop offset="100%" stop-color="#f6cc3c"/>
+    </linearGradient>
+    <linearGradient id="buttonGreen" x1="0%" x2="100%">
+      <stop offset="0%" stop-color="#92ff42"/>
+      <stop offset="100%" stop-color="#6bea2c"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1280" height="720" fill="url(#bgGlow)"/>
+  <rect width="1280" height="720" fill="url(#leftGlow)"/>
+  <rect width="1280" height="720" fill="url(#rightGlow)"/>
+
+  <g opacity="0.6">
+    <ellipse cx="640" cy="140" rx="310" ry="70" fill="rgba(255,255,255,0.05)"/>
+    <ellipse cx="640" cy="145" rx="260" ry="55" fill="rgba(60,255,60,0.06)"/>
+  </g>
+
+  <rect x="390" y="145" width="500" height="430" rx="26" fill="#111214" stroke="url(#panelBorder)" stroke-width="2"/>
+
+  <g transform="translate(640 238)">
+    <rect x="-64" y="-64" width="128" height="128" rx="18" fill="#0d0f0f" stroke="#65ff36" stroke-width="3"/>
+    <circle cx="0" cy="0" r="48" fill="#181818" stroke="#65ff36" stroke-width="2"/>
+    <path d="M-28 -5c5-22 19-35 28-35s23 13 28 35" fill="#f3c24c"/>
+    <path d="M-35 5h70c0 5-3 9-7 11H-28c-4-2-7-6-7-11Z" fill="#7a3d1d"/>
+    <path d="M-30 15h60c0 4-2 8-5 10H-25c-3-2-5-6-5-10Z" fill="#6be12e"/>
+    <path d="M-31 25h62c0 4-2 7-5 9H-26c-3-2-5-5-5-9Z" fill="#d84d3a"/>
+    <path d="M-34 34h68c0 4-3 8-7 10H-27c-4-2-7-6-7-10Z" fill="#f0c14a"/>
+    <text x="0" y="54" text-anchor="middle" fill="#7bff37" font-family="Arial, sans-serif" font-size="17" font-weight="700">FROCO</text>
+  </g>
+
+  <text x="640" y="368" text-anchor="middle" fill="#7bff37" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700">Hamburguesas</text>
+  <text x="640" y="435" text-anchor="middle" fill="#7bff37" font-family="Georgia, 'Times New Roman', serif" font-size="56" font-weight="700">Froco</text>
+  <text x="640" y="476" text-anchor="middle" fill="#eef1f3" font-family="Arial, sans-serif" font-size="18" font-weight="700" letter-spacing="2">SUC. MARAVILLAS</text>
+
+  <g transform="translate(420 500)">
+    <rect width="440" height="58" rx="14" fill="url(#buttonYellow)"/>
+    <text x="220" y="37" text-anchor="middle" fill="#171717" font-family="Arial, sans-serif" font-size="20" font-weight="700">Hacer pedidos</text>
+  </g>
+
+  <g transform="translate(420 570)">
+    <rect width="440" height="58" rx="14" fill="url(#buttonGreen)"/>
+    <text x="220" y="37" text-anchor="middle" fill="#171717" font-family="Arial, sans-serif" font-size="20" font-weight="700">Ver pedidos</text>
+  </g>
+</svg>
