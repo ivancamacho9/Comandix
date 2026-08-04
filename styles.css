@@ -256,6 +256,40 @@ iframe,
     linear-gradient(180deg, rgba(18, 25, 55, 0.4) 0%, rgba(11, 16, 32, 0.8) 100%);
 }
 
+.package-list {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.package-card {
+  background: rgba(12, 18, 40, 0.62);
+  border: 1px solid rgba(132, 211, 255, 0.24);
+  border-radius: 1rem;
+  padding: 1.1rem;
+}
+
+.package-card h3 {
+  font-size: clamp(1.2rem, 2.3vw, 1.5rem);
+  margin-bottom: 0.8rem;
+}
+
+.package-price {
+  display: inline-block;
+  margin: 0 0 1.35rem;
+  padding: 0.4rem 0.7rem;
+  border-radius: 0.55rem;
+  background: rgba(37, 211, 102, 0.14);
+  border: 1px solid rgba(37, 211, 102, 0.35);
+  color: #d9ffe8;
+  font-weight: 700;
+}
+
+.package-price-alt {
+  background: rgba(132, 211, 255, 0.15);
+  border-color: rgba(132, 211, 255, 0.35);
+  color: #d8eeff;
+}
+
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
